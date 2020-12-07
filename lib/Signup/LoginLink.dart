@@ -17,15 +17,18 @@ class LoginLink extends StatelessWidget {
       children: <Widget>[
         Text(
           login ? "Don’t have an Account ? " : "Already have an Account ? ",
-          // style: TextStyle(color: kPrimaryColor),
+          style: TextStyle(
+            color: Colors.black54,
+              fontFamily: 'Gilroy',
+              fontWeight: FontWeight.w600),
         ),
         GestureDetector(
           onTap: press,
           child: Text(
             login ? "Sign Up" : "Sign In",
             style: TextStyle(
-              // color: kPrimaryColor,
               fontWeight: FontWeight.bold,
+              fontFamily: 'Gilroy',
             ),
           ),
         )

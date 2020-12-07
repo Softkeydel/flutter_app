@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/Login/LoginScreen.dart';
+import 'package:flutter_app/Signup/SignupScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,7 +28,9 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: LoginScreen(),
+      home: Scaffold(
+        body: SignupScreen(),
+      ),
     );
   }
 }
